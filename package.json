@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp -r package.json ./dist && conventional-commits-parser -r ./proto/*.proto ./dist",
+    "build": "tsc && cp -r package.json ./dist && cp -r ./proto/*.proto ./dist",
     "generate-types": "proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=./src/ ./proto/*.proto"
   },
   "keywords": [],
